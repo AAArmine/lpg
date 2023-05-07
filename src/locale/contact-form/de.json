@@ -1,0 +1,268 @@
+{
+  "title": "Kontakt",
+  "information": "Ich möchte kostenloses Informationsmaterial erhalten",
+  "offer": "Ich möchte ein kostenloses Angebot erhalten",
+  "prev": "Zurück",
+  "next": "Weiter",
+  "send": "Absenden",
+  "close": "Schließen",
+  "m2": "m²",
+  "yes": "Ja",
+  "no": "Nein",
+  "onlineSource": "Online-Quelle",
+  "required": "*",
+  "progress": "Seite {page}/{total}",
+  "pleaseSelect": "Bitte wählen Sie aus",
+  "downloadBrochure": "Laden Sie unsere Broschüre herunter",
+  "autoreplyEmailSubject": "Ihre Anfrage bei der GNIW",
+  "houseTypes": {
+    "title": "Haustyp",
+    "detachedHouse": {
+      "title": "Einfamilienhaus",
+      "infoText": "Ein Einfamilienhaus ist ein freistehendes Haus. Es grenzt an keine anderen Häuser und ist von keinen anderen Häusern eingeschlossen."
+    },
+    "endOfTerraceHouse": {
+      "title": "Reihenendhaus",
+      "infoText": "Ein Reihenendhaus ist das Haus an einem der äußeren Enden von mindestens drei Reihenhäusern. Es grenzt einseitig an ein anderes Haus und ist nicht von zwei Häusern eingeschlossen."
+    },
+    "midTerraceHouse": {
+      "title": "Reihenmittelhaus",
+      "infoText": "Ein Reihenmittelhaus ist das Haus zwischen zwei Häusern von mindestens drei Reihenhäusern. Es grenzt zweiseitig an ein anderes Haus und ist von zwei Häusern eingeschlossen."
+    },
+    "semiDetachedHouse": {
+      "title": "Doppelhaushalfte",
+      "infoText": "Eine Doppelhaushälfte ist die Hälfte eines Hauses, das zwei getrennte Eingänge hat und von zwei Familien bewohnt wird. Es grenzt einseitig an die andere Haushälfte und ist nicht von zwei Häusern eingeschlossen."
+    },
+    "multiApartmentHouse": {
+      "title": "Mehrfamilienhaus",
+      "infoText": "Ein Mehrfamilienhaus ist ein Wohnhaus mit mehr als 3 Wohneinheiten."
+    },
+    "condominium": {
+      "title": "Eigentumswohnung",
+      "infoText": "Eine Eigentumswohnung ist eine rechtlich selbstständige Wohneinheit innerhalb eines Mehrfamilienhauses."
+    }
+  },
+  "houseConstruction": {
+    "title": "Bauweise",
+    "solidConstruction": {
+      "title": "Massivbau",
+      "infoText": "Von Massivbau wird gesprochen, wenn Ihr Gebäude aus u.a. Beton, Stahlbeton oder Mauerwerk errichtet wurde."
+    },
+    "prefabricatedMassive": {
+      "title": "Fertigbau (Massiv)",
+      "infoText": "Ihr Gebäude weißt massive Bodenplatten oder massive Keller auf. Der wichtigste Baustoff ist für die oberen Stockwerke aber meist massives Holz."
+    },
+    "prefabricatedWood": {
+      "title": "Fertigbau (Holz)",
+      "infoText": "Ihr Fertighaus hat keine massiven Elemente aus Beton, Stahlbeton oder Mauerwerk. Im Kern ist Ihr Gebäude ein Holzhaus."
+    }
+  },
+  "spaceLiving": {
+    "title": "Wohnbereich",
+    "livingArea": {
+      "title": "Wohnfläche",
+      "infoText": "Die Wohnfläche bezeichnet die Summe der anrechenbaren Grundflächen der Wohnräume, die ausschließlich zu einer Wohnung gehören. Zur Wohnfläche gehören auch die Grundflächen von Wintergärten, Schwimmbädern und ähnlichen nach allen Seiten geschlossenen Räumen sowie Balkone, Loggien, Dachgärten und Terrassen, wenn sie ausschließlich zu der Wohnung gehören. Achtung: Die Grundflächen von Räumen und Raumteilen mit einer lichten Höhe von mindestens einem Meter und weniger als zwei Metern (z. B. ausgebauter Spitzboden) sind zu 50 % anzurechnen.Unbeheizte Wintergärten, Schwimmbäder und ähnliche nach allen Seiten geschlossenen Räumen sind zu 50 % und Balkone, Loggien, Dachgärten und Terrassen sind in der Regel zu 25 %, höchstens jedoch zu 50 % anzurechnen."
+    },
+    "additionalArea": {
+      "title": "Zusätzliche Nutzfläche",
+      "infoText": "Zur Wohnfläche gehören nicht die Grundflächen der Zubehörräume (insbesondere Kellerräume, Abstellräume und Kellerersatzräume außerhalb der Wohnung, Waschküchen, Bodenräume, Trockenräume, Heizungsräume und Garagen sowie Geschäftsräume), welche als zusätzliche Nutzfläche bezeichnet werden."
+    },
+    "rentedArea": {
+      "title": "Vermietete Fläche",
+      "infoText": "Bitte geben Sie die Mietfläche der Einliegerwohnung an, welche in der gesamten Wohnfläche der Immobilie enthalten ist."
+    },
+    "landArea": {
+      "title": "Grundstücksgröße",
+      "infoText": "Die Grundstücksgröße ist die Fläche eines Grundstückes. Die Grundstücksgröße ist im Bestandsverzeichnis des Grundbuches zu finden oder beim Katasteramt erfasst."
+    }
+  },
+  "houseCondition": {
+    "yearOfConstruction": {
+      "title": "Baujahr",
+      "infoText": "Das Baujahr des Gebäudes bezeichnet das Jahr in dem das Gebäude fertig gestellt wurde."
+    },
+    "objectState": {
+      "title": "Objektzustand",
+      "infoText": "Bitte geben Sie an in welchem Zustand sich die Immobilie befindet.",
+      "options": {
+        "0": "schlecht",
+        "1": "mäßig",
+        "2": "mittel",
+        "3": "gut",
+        "4": "sehr gut"
+      }
+    },
+    "furnishing": {
+      "title": "Ausstattung",
+      "infoText": "Bitte geben Sie an welche Ausstattung die Immobilie aufweist.",
+      "options": {
+        "0": "einfach",
+        "1": "durchschnittlich",
+        "2": "gehoben",
+        "3": "luxuriös"
+      }
+    }
+  },
+  "numberOfRooms": {
+    "elevator": {
+      "title": "Fahrstuhl",
+      "infoText": "Verfügt das Gebäude (Haupt- oder Nebengebäude bzw. Seitenflügel) über einen Aufzug? Bitte geben Sie auch \"ja\" an, wenn Ihre Wohnung im Erdgeschoss ist oder der Fahrstuhl auf einer halben Etage hält und Sie noch eine Treppe hochlaufen müssen."
+    },
+    "numberOfRooms": {
+      "title": "Anzahl Zimmer",
+      "infoText": "Bitte geben Sie die Anzahl der Zimmer bzw. Räume (ohne Flure, Küchen und Bäder) an."
+    },
+    "toilets": {
+      "title": "Anzahl Bäder",
+      "infoText": "Bitte geben Sie die Anzahl der Bäder (ohne Gäste-WC) an."
+    }
+  },
+  "houseProperties": {
+    "pool": {
+      "title": "Pool",
+      "infoText": "Verfügt die Immobilie über ein innenliegendes Schwimmbad?"
+    },
+    "sauna": {
+      "title": "Sauna",
+      "infoText": "Verfügt die Immobilie über eine festeingebaute Sauna?"
+    },
+    "solarPanel": {
+      "title": "Photovoltaikanlage im Eigentum",
+      "infoText": "Verfügt die Immobilie über eine Photovoltaikanlage?"
+    }
+  },
+  "heating": {
+    "heatingAge": {
+      "title": "Alter der Heizung",
+      "infoText": "Da die Heizung einer der wichtigsten Bestandteile im Innenbereich ist, wollen wir wissen wie alt die Heizung ist. Sie profitieren von einem exakteren Ergebnis.",
+      "options": {
+        "0": "1 - 5 Jahre",
+        "1": "6 - 15 Jahre",
+        "2": "16 - 29 Jahre",
+        "3": "30+ Jahre"
+      }
+    },
+    "window": {
+      "title": "Fenster",
+      "infoText": "Bitte geben Sie an, welche Fenster in Ihrer Wohnung verbaut sind. Dies beeinflusst die Wertermittlung erheblich.",
+      "options": {
+        "0": "einfach verglast",
+        "1": "zweifach verglast",
+        "2": "dreifach verglast",
+        "3": "Kastenfenster",
+        "4": "große feststehende Fensterflächen",
+        "5": "Spezialverglasung",
+        "6": "sonstige"
+      }
+    },
+    "roofing": {
+      "title": "Dacheindeckung",
+      "options": {
+        "0": "Dachpappe",
+        "1": "Dachpfannen/ziegel",
+        "2": "Kunstschiefer",
+        "3": "Naturschiefer/Metall",
+        "4": "sonstige"
+      }
+    }
+  },
+  "carParking": {
+    "numberOfUndergroundParkings": {
+      "title": "Garagenstellplätze",
+      "infoText": "Bitte geben Sie die Anzahl der Gargenstellplätze oder Tiefgaragenstellplätze an."
+    },
+    "numberOfParkingLots": {
+      "title": "Parkplätze",
+      "infoText": "Bitte geben Sie die Anzahl an PKW-Außenstellplätze (zur Wohnung) an."
+    }
+  },
+  "misc": {
+    "asbest": {
+      "title": "Asbest",
+      "infoText": "Wurde in Ihrer Immobilie Asbest verbaut? Zum Beispiel auf dem Dach oder in der Fassade?"
+    },
+    "leaseHold": {
+      "title": "Erbbaurecht",
+      "infoText": "Erbbaurecht bzw. Erbbaupacht bezeichnet den Umstand, dass Ihnen jemand das Grundstück zur Nutzung (gegen Pacht) zur Verfügung stellt. Erbbaurecht beeinflusst die Bewertung sehr stark, sodass wir wissen müssen, ob Erbbaurecht bei Ihnen vorliegt."
+    },
+    "monumentProtection": {
+      "title": "Denkmalschutz",
+      "infoText": "Der Denkmalschutz dient der Erhaltung historisch relevanter Bauwerke. Die unter Denkmalschutz stehenden Immobilien gelten als schützenswerte Objekte aufgrund ihrer historischen und kulturellen Bedeutung."
+    }
+  },
+  "contact-info": {
+    "title": {
+      "offer": "Kontaktinformationen / Objektadresse",
+      "information": "Kontaktinformationen"
+    },
+    "salutation": {
+      "title": "Anrede",
+      "mr": "Herr",
+      "ms": "Frau",
+      "mrms": "Eheleute"
+    },
+    "firstName": "Vorname",
+    "lastName": "Name",
+    "dateOfBirth": "Geburtsdatum",
+    "children": "Anzahl Kinder",
+    "maritalStatus": {
+      "title": "Familienstand",
+      "single": "Alleinstehend",
+      "divorced": "Geschieden",
+      "married": "Verheiratet",
+      "partnership": "Partnerschaft",
+      "widowed": "Verwitwet"
+    },
+    "partnerDateOfBirth": "Geburtsdatum des Partner",
+    "email": "Email",
+    "phone": "Telefon",
+    "street": "Straße",
+    "houseNumber": "Nr.",
+    "zipCode": "PLZ",
+    "city": "Ort",
+    "comments": "Kommentar",
+    "receiveInformationViaPostAndEmail": "Das kostenlose Informationsmaterial per Download und Post erhalten",
+    "receiveInformationViaEmail": "Das kostenlose Informationsmaterial nur per Download erhalten",
+    "receiveOfferViaPostAndEmail": "Das kostenlose Angebot per Email und Post erhalten",
+    "receiveOfferViaEmail": "Das kostenlose Angebot nur per Email zusenden",
+    "subscribeToNewsLetter": "Ja, ich möchte individuelle Angebote und Neuigkeiten der  GNIW Gesellschaft für Nachhaltige Immobilienwirtschaft mbH erhalten und erteile dazu mein Einverständnis. Ich kann meine Einwilligung jederzeit mit Wirkung für die Zukunft und ohne Angabe von Gründen widerrufen."
+  },
+  "emailRequest": {
+    "information": {
+      "subject": "GNIW.DE || Neue Informationsmaterial Anfrage"
+    },
+    "offer": {
+      "subject": "GNIW.DE || Neue Angebotsanfrage von {lastName}, {address}"
+    }
+  },
+  "houseFloors": {
+    "numberOfFloors": {
+      "title": "Anzahl der Geschosse (ohne Dach/Kellergeschoss)",
+      "infoText": "Geben sie bitte alle vollen Wohngeschosse an (ohne Keller, halbe Geschosse oder Geschosse mit Dachschrägen)."
+    },
+    "apartmentLocation": {
+      "title": "Lage der Wohnung (Geschosszahl)"
+    },
+    "basement": {
+      "title": "Keller",
+      "infoText": "Wie sehr ist Ihr Gebäude unterkellert?",
+      "options": {
+        "0": "Vollunterkellert",
+        "1": "Teilweise",
+        "2": "unterkellert",
+        "3": "Nicht unterkellert"
+      }
+    },
+    "roof": {
+      "title": "Dach",
+      "infoText": "Wenn eine Etage Dachschrägen hat, dann gehört diese Etage i.d.R. bereits zum Dachgeschoss. Indem Fall geben sie bitte teilweise/voll \"ausgebautes Dachgeschoss\" ein.",
+      "options": {
+        "0": "Voll ausgebaut",
+        "1": "Teilweise ausgebaut",
+        "2": "Nicht ausgebaut",
+        "3": "Flachdach"
+      }
+    }
+  },
+  "successMessage": "Vielen Dank für Ihre Anfrage - wir werden uns zeitnah bei Ihnen melden."
+}

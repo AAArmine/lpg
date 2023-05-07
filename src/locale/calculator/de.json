@@ -1,0 +1,21 @@
+{
+  "eurSign": "€",
+  "calculator": {
+    "title": "Sofort berechnen",
+    "propertyValue": {
+      "title": "Wert der Immobilie im bewohnten Zustand",
+      "value": "{worthy}€"
+    },
+    "monthlyFee": {
+      "title": "Mögliche Mietbrandbreite",
+      "value": "{minFee}€ - {maxFee}€"
+    }
+  },
+  "graph": {
+    "worthy": "Immobilienwert",
+    "fee": "Mietbrandbreite"
+  },
+  "helpCTA": "Beratungstermin vereinbaren",
+  "offerCTA": "Angebot anfordern",
+  "footnote": "Alle Werte sind indikativ. Für detaillierte Bewertungen kontaktieren Sie bitte unsere Experten und lassen Sie sich unser kostenloses Angebot zusenden"
+}

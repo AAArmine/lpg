@@ -1,0 +1,783 @@
+:root {
+  --main: #004a93;
+  --mainDark: #292e66;
+  --item-bg: #efefef;
+  --alternative: #017aff;
+  --error: #ff5555;
+  --greyed-out: #a1a1a1;
+  --contact-form-text: #383636;
+}
+#kontakt .slider-wrapper {
+  height: 100%;
+}
+#kontakt svg {
+  width: 100%;
+  height: 100%;
+}
+
+#kontakt .form-container {
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+}
+
+#kontakt .info-or-offer {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  font-weight: 600;
+  color: var(--main);
+  padding: 2rem;
+}
+
+#kontakt .info-or-offer .item-container {
+  padding: 2rem;
+  display: flex;
+}
+
+#kontakt .info-or-offer .item-body {
+  flex: 1;
+  background-color: var(--item-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 0;
+  cursor: pointer;
+  gap: 2rem;
+}
+
+#kontakt .info-or-offer .item-body:hover {
+  outline: 3px var(--alternative) solid;
+}
+
+#kontakt .info-or-offer .item-body.active {
+  outline: 3px var(--main) solid;
+}
+
+#kontakt .info-or-offer .item-body h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0 10%;
+}
+
+#kontakt .info-or-offer .item-body .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+}
+
+#kontakt nav {
+  display: grid;
+  justify-content: space-between;
+  padding: 0 1.75rem 1.75rem;
+  grid-template-columns: max-content max-content;
+}
+
+#kontakt nav button {
+  padding: 0.75rem 2rem;
+  color: white;
+  position: relative;
+  text-transform: uppercase;
+  background-color: var(--main);
+  font-size: 1.15rem;
+}
+
+#kontakt nav button.disabled {
+  background-color: var(--greyed-out);
+}
+
+#kontakt nav button.next {
+  padding-right: 3.5rem;
+}
+
+#kontakt nav button.next:after,
+#kontakt nav button.prev:after {
+  background-repeat: no-repeat;
+  content: "";
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 10px;
+}
+
+#kontakt nav button.next:after {
+  background-image: url(/assets/images/contact/btn-next.svg);
+  right: 1.25rem;
+}
+
+#kontakt nav button.prev {
+  padding-left: 3.5rem;
+}
+
+#kontakt nav button.prev:after {
+  background-image: url(/assets/images/contact/btn-prev.svg);
+  left: 1.25rem;
+}
+
+#kontakt .offer-form .progress {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 0.5rem 0.5rem 0;
+  gap: 0.5rem;
+}
+
+#kontakt .offer-form .progress .trail {
+  position: relative;
+}
+
+#kontakt .offer-form .progress .trail i {
+  border-radius: 0.25rem;
+  background-color: var(--main);
+  height: 100%;
+  position: absolute;
+}
+
+#kontakt .form-step {
+  display: flex;
+}
+
+#kontakt .form-step.with-description {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+#kontakt .form-step-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#kontakt .form-step-container.full-height {
+  min-height: 29.45rem;
+}
+
+#kontakt .form-step-container.two-rows .form-item-container {
+  padding: 1.5rem;
+  font-weight: 600;
+}
+
+#kontakt .form-step-container .form-item-container {
+  padding: 0 1.5rem;
+  width: 33%;
+}
+
+#kontakt .form-step-container .form-item-container.hover .form-item:hover {
+  outline: 3px var(--alternative) solid;
+}
+
+#kontakt .form-step-container .form-item-container.pointer {
+  cursor: pointer;
+}
+
+#kontakt .form-item {
+  background-color: var(--item-bg);
+  position: relative;
+  color: var(--main);
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+#kontakt .form-item.active {
+  outline: 3px var(--main) solid;
+}
+
+#kontakt .form-item.disabled {
+  color: var(--greyed-out) !important;
+}
+#kontakt .form-item.disabled label {
+  background-color: var(--greyed-out) !important;
+}
+#kontakt .form-item.disabled svg * {
+  fill: var(--greyed-out) !important;
+}
+#kontakt .form-item .check-mark,
+#kontakt .form-item .question-mark {
+  position: absolute;
+  top: -10px;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+}
+#kontakt .form-item .question-mark {
+  left: -7px;
+}
+#kontakt .form-item .check-mark {
+  right: -7px;
+  display: none;
+}
+#kontakt .form-item.active .check-mark {
+  display: block;
+}
+#kontakt .form-item .info-text {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #ffffff;
+  overflow-y: auto;
+  color: var(--main);
+  padding: 20px 8px 8px 8px;
+  font-weight: 700;
+  font-size: 13px;
+  transition: visibility 0s, opacity 0.15s linear;
+}
+
+#kontakt .form-item .question-mark:hover + .info-text {
+  visibility: visible;
+  opacity: 0.9;
+}
+#kontakt .form-item .info-text:hover {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+#kontakt .form-item label {
+  background-color: var(--main);
+  color: #ffffff;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  overflow: hidden;
+}
+
+#kontakt .form-item-container .form-item label select:focus {
+  outline: none;
+}
+
+#kontakt .form-item-container .form-item label select {
+  border-radius: 0.3rem;
+  outline: none;
+  color: var(--main);
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0.25rem 0;
+  text-align: left;
+  text-align-last: center;
+  background-color: #ffffff;
+  min-height: 2rem;
+}
+#kontakt .form-item-container .form-item label select.default {
+  color: var(--greyed-out);
+}
+#kontakt .form-item-container .form-item label select option {
+  background-color: #ffffff;
+}
+#kontakt .form-item-container .form-item label select option:not(:disabled) {
+  color: var(--main);
+}
+
+#kontakt .form-item-container.yes-no .form-item {
+  grid-template-rows: auto 3.2rem;
+}
+
+#kontakt .form-item .form-item-body {
+  flex: 1;
+  padding: 0.75rem;
+}
+
+#kontakt .form-item .form-item-body.slider {
+  display: grid;
+  grid-template-rows: 1fr 3rem;
+  gap: 0.25rem;
+}
+
+#kontakt .form-item .form-item-body.slider .slider-flex {
+  padding: 0 0.5rem;
+}
+
+#kontakt .form-item .form-item-body.yes-no-body {
+  display: grid;
+  grid-template-rows: 1fr 3rem;
+  gap: 0.25rem;
+}
+
+#kontakt .form-item .form-item-body .img {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: auto 3.5rem;
+  gap: 1rem;
+  line-height: 1.25rem;
+}
+
+#kontakt .form-item .form-item-body .img .svg-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#kontakt .form-item .form-item-body .img h3 {
+  font-weight: 600;
+}
+
+#kontakt .form-item-body.multiple-choice {
+  display: grid;
+  grid-template-rows: 1fr 3rem;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+#kontakt .form-item .yes-no {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  background-color: #ffffff;
+}
+
+#kontakt .form-item .yes-no label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#kontakt .form-item .yes-no label.active {
+  background-color: #ffffff;
+  outline: 3px var(--alternative) solid;
+  color: var(--main);
+  font-weight: 600;
+}
+
+#kontakt .hose-floors-container {
+  background-color: var(--item-bg);
+  flex: 1;
+  font-weight: 600;
+  color: var(--main);
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+#kontakt .hose-floors-container .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#kontakt .hose-floors-container .img svg {
+  height: 12rem;
+}
+
+#kontakt .hose-floors-container .toggles {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-rows: repeat(2, 50%);
+}
+
+#kontakt .hose-floors-container .toggles .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#kontakt .hose-floors-container .toggles .check-box:not(:last-child) {
+  margin-right: 2rem;
+}
+
+#kontakt .check-box {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  padding: 0.25rem 0;
+  gap: 0.5rem;
+  text-align: left;
+  align-items: center;
+}
+#kontakt .check-box span {
+  line-height: 1.075rem;
+}
+#kontakt .check-box i {
+  background-color: #ffffff;
+  height: 1.5rem;
+}
+#kontakt .check-box .check-icon {
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#kontakt .check-box.checked .check-icon {
+  display: block;
+}
+
+#kontakt .success-container {
+  background-color: var(--item-bg);
+  flex: 1;
+  padding: 6rem 0;
+  font-weight: 600;
+  color: var(--main);
+  display: flex;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#kontakt .success-container .success-icon {
+  width: 9rem;
+}
+
+/* contact info */
+#kontakt .contact-info-container {
+  background-color: var(--item-bg);
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem 1.5rem;
+  color: var(--contact-form-text);
+}
+#kontakt .contact-info-container h3 {
+  padding-bottom: 1rem;
+  font-weight: 600;
+  color: var(--main);
+}
+#kontakt .contact-info-container .input-container input,
+#kontakt .contact-info-container .input-container textarea,
+#kontakt .contact-info-container .input-container select {
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 100%;
+}
+#kontakt .contact-info-container .input-container input.error,
+#kontakt .contact-info-container .input-container textarea.error,
+#kontakt .contact-info-container .input-container select.error {
+  outline: var(--error) 1px solid;
+}
+#kontakt .contact-info-container .input-container input::placeholder,
+#kontakt .contact-info-container .input-container textarea::placeholder,
+#kontakt .contact-info-container .input-container select::placeholder,
+#kontakt .contact-info-container .input-container select.default {
+  color: var(--greyed-out);
+}
+#kontakt .contact-info-container .input-container select option:not(:disabled) {
+  color: var(--contact-form-text);
+}
+
+#kontakt .contact-info-container .contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "salutation first-name first-name last-name last-name last-name"
+    "date-Of-birth kids-number kids-number marital-status date-Of-birth-partner date-Of-birth-partner"
+    "email email email phone phone phone"
+    "street street street street building-number building-number"
+    "zip-code zip-code city city city city"
+    "viaEmailAndPost viaEmailAndPost viaEmailAndPost viaEmail viaEmail viaEmail"
+    "comments comments comments comments comments comments"
+    "subscribe subscribe subscribe subscribe subscribe subscribe";
+  grid-gap: 0.5rem;
+}
+#kontakt .contact-info-container .salutation {
+  grid-area: salutation;
+}
+#kontakt .contact-info-container .first-name {
+  grid-area: first-name;
+}
+#kontakt .contact-info-container .last-name {
+  grid-area: last-name;
+}
+#kontakt .contact-info-container .date-Of-birth {
+  grid-area: date-Of-birth;
+}
+#kontakt .contact-info-container .kids-number {
+  grid-area: kids-number;
+}
+#kontakt .contact-info-container .marital-status {
+  grid-area: marital-status;
+}
+#kontakt .contact-info-container .date-Of-birth-partner {
+  grid-area: date-Of-birth-partner;
+}
+#kontakt .contact-info-container .email {
+  grid-area: email;
+}
+#kontakt .contact-info-container .phone {
+  grid-area: phone;
+}
+#kontakt .contact-info-container .street {
+  grid-area: street;
+}
+#kontakt .contact-info-container .building-number {
+  grid-area: building-number;
+}
+#kontakt .contact-info-container .zip-code {
+  grid-area: zip-code;
+}
+#kontakt .contact-info-container .city {
+  grid-area: city;
+}
+#kontakt .contact-info-container .viaEmailAndPost {
+  grid-area: viaEmailAndPost;
+}
+#kontakt .contact-info-container .viaEmail {
+  grid-area: viaEmail;
+}
+#kontakt .contact-info-container .comments {
+  grid-area: comments;
+}
+#kontakt .contact-info-container .subscribe {
+  grid-area: subscribe;
+}
+
+#kontakt .form-item .range-chose {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+#kontakt .form-item .range-chose input {
+  outline: none;
+  background-color: #ffffff;
+  color: var(--main);
+  padding: 0 0.5rem;
+  border-radius: 0.2rem;
+  border: none;
+  min-height: 2rem;
+}
+#kontakt .form-item .range-chose span {
+  padding-left: 1rem;
+}
+
+#kontakt .form-item .range-chose.disabled input {
+  color: var(--greyed-out);
+}
+
+#kontakt .form-item .range-chose input::-webkit-outer-spin-button,
+#kontakt .form-item .range-chose input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#kontakt .form-item .range-chose input {
+  -moz-appearance: textfield;
+}
+
+#kontakt
+  .form-step-container.multiple-choice-container
+  .form-item
+  .svg-cnt
+  svg {
+  height: 9rem;
+}
+#kontakt .form-step-container .construction-item {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+#kontakt .form-step-container .construction-item > h3 {
+  font-weight: 600;
+  color: var(--main);
+  font-size: 1.2rem;
+}
+#kontakt .form-step-container .construction-item-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#kontakt .form-step-container .construction-item-container.body .house-type {
+  padding: 2.75rem 0;
+}
+
+.download-brochure-modal {
+  inset: 50% auto auto 50%;
+  margin-right: -50%;
+  transform: translate(-50%, calc(-50% + 64px));
+  background-color: #ffffff;
+  position: absolute;
+  padding: 2rem;
+  border: 2px solid var(--main);
+}
+
+.download-brochure-modal .inner {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 3rem;
+}
+
+.download-brochure-modal .inner .body {
+  color: var(--main);
+}
+
+.download-brochure-modal .inner .body img {
+  height: 50vh;
+}
+
+.download-brochure-modal .inner nav {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1rem;
+  align-items: center;
+}
+
+.download-brochure-modal .inner nav button.close {
+  color: var(--main);
+  text-transform: uppercase;
+}
+
+.download-brochure-modal .inner nav .download {
+  border: 1px solid var(--main);
+  padding: 0.25rem 2rem 0.25rem 2.5rem;
+  color: white;
+  position: relative;
+  text-transform: uppercase;
+  background-color: var(--main);
+}
+
+.download-brochure-modal .inner nav .download::after {
+  background-repeat: no-repeat;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background-image: url(/assets/images/pdf-icon.svg);
+  left: 0;
+}
+
+#kontakt .form-item .form-item-body .img .svg-cnt {
+  height: 13rem;
+  padding: 2rem;
+}
+
+#kontakt .form-step-container .house-types-container {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
+  gap: 2rem;
+  width: 100%;
+}
+
+#kontakt .form-step-container .house-types-container .form-item-container {
+  width: 100%;
+  padding: 0;
+}
+
+#kontakt .form-step-container .house-types-container .house-type-item {
+  display: flex;
+}
+#kontakt
+  .form-step-container
+  .house-types-container
+  .house-type-item
+  .form-item {
+  grid-template-rows: 1fr auto;
+  padding: 1rem;
+  flex: 1;
+}
+#kontakt
+  .form-step-container
+  .house-types-container
+  .house-type-item
+  .form-item
+  .svg-cnt {
+  height: 8rem;
+}
+#kontakt
+  .form-step-container
+  .house-types-container
+  .house-type-item
+  .form-item
+  h3 {
+  font-weight: 600;
+}
+#kontakt .form-step-container .house-types-container .house-type-item .svg-cnt {
+  padding: 1rem 0 1.5rem;
+}
+
+/* medium size */
+@media screen and (max-width: 768px) {
+  #kontakt .form-step-container {
+    height: auto !important;
+  }
+
+  #kontakt .form-step-container .house-types-container {
+    display: block;
+  }
+  #kontakt .form-step-container .house-types-container .form-item-container {
+    padding: 1.5rem;
+  }
+
+  .download-brochure-modal {
+    inset: 6rem 0 0;
+    margin-right: 0;
+    transform: none;
+    border: none;
+  }
+
+  #kontakt nav button.prev {
+    padding-left: 1.75rem;
+  }
+  #kontakt nav button.prev:after {
+    left: 0.25rem;
+  }
+  #kontakt nav button.prev span {
+    display: none;
+  }
+
+  #kontakt nav button.next {
+    padding-right: 2.5rem;
+  }
+  #kontakt nav button.next:after {
+    right: 0.25rem;
+  }
+  #kontakt nav button.next:after,
+  #kontakt nav button.prev:after {
+    top: 2px;
+  }
+  #kontakt nav button {
+    padding: 0.35rem 0.75rem;
+    font-size: 1rem;
+  }
+  #kontakt .form-step {
+    display: block;
+  }
+
+  #kontakt .form-step-container {
+    padding: 1rem;
+  }
+
+  #kontakt .info-or-offer {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 50%);
+    padding: 0.25rem;
+  }
+
+  #kontakt .form-step-container .form-item-container {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  #kontakt .hose-floors-container .toggles {
+    display: block;
+  }
+
+  #kontakt .hose-floors-container .toggles .row {
+    display: block;
+  }
+  #kontakt .contact-info-container .contact-container {
+    display: block;
+  }
+
+  #kontakt .contact-info-container .input-container:not(.empty) {
+    padding: 0.25rem;
+  }
+
+  #kontakt .contact-info-container {
+    padding: 1.5rem;
+  }
+
+  #kontakt .info-or-offer .item-container {
+    padding: 1rem;
+  }
+
+  #kontakt .info-or-offer .item-body h3 {
+    line-height: 1rem;
+  }
+}

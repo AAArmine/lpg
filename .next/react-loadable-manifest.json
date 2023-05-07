@@ -1,0 +1,200 @@
+{
+  "..\\..\\node_modules\\next\\dist\\client\\next-dev.js -> ./dev/noop": {
+    "id": "./node_modules/next/dist/client/dev/noop.js",
+    "files": [
+      "static/chunks/node_modules_next_dist_client_dev_noop_js.js"
+    ]
+  },
+  "..\\templates\\Base.tsx -> ../layout/Meta": {
+    "id": "./src/layout/Meta.tsx",
+    "files": [
+      "static/chunks/src_layout_Meta_tsx-_b82a1.js"
+    ]
+  },
+  "..\\templates\\Base.tsx -> ../navigation/NavHeader": {
+    "id": "./src/navigation/NavHeader.tsx",
+    "files": [
+      "static/chunks/src_navigation_NavHeader_tsx-_270e1.js"
+    ]
+  },
+  "..\\templates\\Base.tsx -> ./Faq": {
+    "id": "./src/templates/Faq.tsx",
+    "files": [
+      "static/chunks/src_templates_Faq_tsx.js"
+    ]
+  },
+  "..\\templates\\Base.tsx -> ./FeatureSelection": {
+    "id": "./src/templates/FeatureSelection.tsx",
+    "files": [
+      "static/chunks/src_templates_FeatureSelection_tsx.js"
+    ]
+  },
+  "..\\templates\\Base.tsx -> ./Footer": {
+    "id": "./src/templates/Footer.tsx",
+    "files": [
+      "static/chunks/src_templates_Footer_tsx-_d47d1.js"
+    ]
+  },
+  "..\\templates\\Base.tsx -> ./Hero": {
+    "id": "./src/templates/Hero.tsx",
+    "files": [
+      "static/chunks/src_templates_Hero_tsx.js"
+    ]
+  },
+  "..\\templates\\Base.tsx -> ./LogoCloud": {
+    "id": "./src/templates/LogoCloud.tsx",
+    "files": [
+      "static/chunks/src_templates_LogoCloud_tsx.js"
+    ]
+  },
+  "..\\templates\\Base.tsx -> ./Process": {
+    "id": "./src/templates/Process.tsx",
+    "files": [
+      "static/chunks/src_templates_Process_tsx.js"
+    ]
+  },
+  "..\\templates\\Base.tsx -> ./TrustPilotCarousel": {
+    "id": "./src/templates/TrustPilotCarousel.tsx",
+    "files": [
+      "static/chunks/src_templates_TrustPilotCarousel_tsx.js"
+    ]
+  },
+  "..\\templates\\Contact\\index.tsx -> ./AdcellTrackingPixel": {
+    "id": "./src/templates/Contact/AdcellTrackingPixel.tsx",
+    "files": [
+      "static/chunks/src_templates_Contact_AdcellTrackingPixel_tsx.js"
+    ]
+  },
+  "..\\templates\\Contact\\index.tsx -> ./InformationForm": {
+    "id": "./src/templates/Contact/InformationForm/index.tsx",
+    "files": [
+      "static/chunks/src_templates_Contact_InformationForm_index_tsx.js"
+    ]
+  },
+  "..\\templates\\Contact\\index.tsx -> ./InformationOrOffer": {
+    "id": "./src/templates/Contact/InformationOrOffer/index.tsx",
+    "files": [
+      "static/chunks/src_templates_Contact_InformationOrOffer_index_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSaleLayout.tsx -> ../layout/Meta": {
+    "id": "./src/layout/Meta.tsx",
+    "files": [
+      "static/chunks/src_layout_Meta_tsx-_b82a0.js"
+    ]
+  },
+  "..\\templates\\PartSaleLayout.tsx -> ../navigation/NavHeader": {
+    "id": "./src/navigation/NavHeader.tsx",
+    "files": [
+      "static/chunks/src_navigation_NavHeader_tsx-_270e0.js"
+    ]
+  },
+  "..\\templates\\PartSaleLayout.tsx -> ./Footer": {
+    "id": "./src/templates/Footer.tsx",
+    "files": [
+      "static/chunks/src_templates_Footer_tsx-_d47d0.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ../Calculator": {
+    "id": "./src/templates/Calculator/index.tsx",
+    "files": [
+      "static/chunks/src_templates_Calculator_index_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ../SaleWithResidence/CallUs": {
+    "id": "./src/templates/SaleWithResidence/CallUs.tsx",
+    "files": [
+      "static/chunks/src_templates_SaleWithResidence_CallUs_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ../TrustPilotCarousel": {
+    "id": "./src/templates/TrustPilotCarousel.tsx",
+    "files": [
+      "static/chunks/src_templates_TrustPilotCarousel_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ./AboutSec": {
+    "id": "./src/templates/PartSale/AboutSec.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSale_AboutSec_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ./AlternativeSec": {
+    "id": "./src/templates/PartSale/AlternativeSec.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSale_AlternativeSec_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ./BenefitsSec": {
+    "id": "./src/templates/PartSale/BenefitsSec.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSale_BenefitsSec_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ./FaqSection": {
+    "id": "./src/templates/PartSale/FaqSection.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSale_FaqSection_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ./ForSellers": {
+    "id": "./src/templates/PartSale/ForSellers.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSale_ForSellers_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ./PartSaleBottom": {
+    "id": "./src/templates/PartSale/PartSaleBottom.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSale_PartSaleBottom_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ./PartSaleSection": {
+    "id": "./src/templates/PartSale/PartSaleSection.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSale_PartSaleSection_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ./PartialSaleBenefits": {
+    "id": "./src/templates/PartSale/PartialSaleBenefits.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSale_PartialSaleBenefits_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ./PartialSaleSteps": {
+    "id": "./src/templates/PartSale/PartialSaleSteps.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSale_PartialSaleSteps_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ./Steps": {
+    "id": "./src/templates/PartSale/Steps.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSale_Steps_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ./SuitableSec": {
+    "id": "./src/templates/PartSale/SuitableSec.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSale_SuitableSec_tsx.js"
+    ]
+  },
+  "..\\templates\\PartSale\\index.tsx -> ./WhoBenefits": {
+    "id": "./src/templates/PartSale/WhoBenefits.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSale_WhoBenefits_tsx.js"
+    ]
+  },
+  "teilverkauf-immobilie.tsx -> ../templates/PartSale": {
+    "id": "./src/templates/PartSale/index.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSale_index_tsx.js"
+    ]
+  },
+  "teilverkauf-immobilie.tsx -> ../templates/PartSaleLayout": {
+    "id": "./src/templates/PartSaleLayout.tsx",
+    "files": [
+      "static/chunks/src_templates_PartSaleLayout_tsx.js"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+:root {
+  --slider-flex-main: #004a93;
+  --slider-flex-greyed-out: #a1a1a1;
+  --slider-flex-alternative: #017aff;
+}
+
+.slider-flex {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slider-flex button {
+  width: 2rem;
+  height: 2rem;
+}
+
+.slider-flex .rc-slider-track {
+  height: 6px !important;
+  background-color: var(--slider-flex-main) !important;
+}
+
+.slider-flex .rc-slider-rail {
+  height: 6px !important;
+  background-color: var(--slider-flex-main) !important;
+}
+
+.slider-flex .rc-slider-disabled .rc-slider-track,
+.slider-flex .rc-slider-disabled .rc-slider-rail {
+  background-color: var(--slider-flex-greyed-out) !important;
+}
+
+.slider-flex .rc-slider-handle {
+  width: 20px !important;
+  height: 20px !important;
+  margin-top: -7px !important;
+  border: solid 2px var(--slider-flex-alternative) !important;
+  background-color: var(--slider-flex-alternative) !important;
+}
+
+.slider-flex .rc-slider-disabled .rc-slider-handle {
+  border: solid 2px var(--slider-flex-greyed-out) !important;
+  background-color: var(--slider-flex-greyed-out) !important;
+}

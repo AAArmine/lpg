@@ -1,0 +1,28 @@
+#article .pdf-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#article .pdf-container .document {
+  margin: 1em 0;
+  flex: 1;
+}
+
+#article .pdf-container .document .react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#article .pdf-container .document .react-pdf__Page {
+  max-width: calc(100% - 2em);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  margin: 1em;
+}
+
+#article .pdf-container .document .react-pdf__Page canvas {
+  min-width: 560px;
+  max-width: 100%;
+  height: auto !important;
+}
